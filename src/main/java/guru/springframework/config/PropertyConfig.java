@@ -1,24 +1,30 @@
 package guru.springframework.config;
 
 import guru.springframework.externalbeans.FakeDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+import org.springframework.core.env.Environment;
 
 /* Configuration file / set property path*/
 @Configuration
 @PropertySource("classpath:datasource.properties")
 public class PropertyConfig {
 
+    /* We can get Environment variables with this -> the env.getProperty("USERNAME)*/
+    @Autowired
+    Environment env;
+
     @Value("${guru.username}")
     String user;
 
-    @Value("${guru.password")
+    @Value("${guru.password}")
     String password;
 
-    @Value("${guru.dburl")
+    @Value("${guru.dburl}")
     String url;
 
     @Bean
