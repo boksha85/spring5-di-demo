@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 public class GetterInjectedController {
     private GreetingService greetingService;
 
-    public String sayHello(){
+    public String sayHello() {
         return greetingService.sayGreeting();
     }
 

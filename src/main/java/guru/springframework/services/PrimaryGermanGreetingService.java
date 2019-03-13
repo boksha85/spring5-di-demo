@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 /**
  * Created by jt on 5/24/17.
  */
+
+//evertyhing controlled by GreetingConfig class
 //@Service
 //@Primary
 //@Profile("de")
