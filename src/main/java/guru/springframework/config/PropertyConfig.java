@@ -16,15 +16,15 @@ import org.springframework.core.env.Environment;
 /* two possibilities*/
 //@PropertySource({"classpath:datasource.properties", "classpath:jms.properties"})
 /* Or use */
-@PropertySources({
+/*@PropertySources({
         @PropertySource("classpath:datasource.properties"),
         @PropertySource("classpath:jms.properties")
-})
+})*/
 public class PropertyConfig {
 
     /* We can get Environment variables with this -> the env.getProperty("USERNAME)*/
-    @Autowired
-    Environment env;
+ /*   @Autowired
+    Environment env;*/
 
     @Value("${guru.username}")
     String user;
@@ -62,10 +62,10 @@ public class PropertyConfig {
         return fakeJmsBroker;
     }
 
-    @Bean
+   /* @Bean
     public static PropertySourcesPlaceholderConfigurer properties() {
         PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
         return propertySourcesPlaceholderConfigurer;
-    }
+    }*/
 }
 
