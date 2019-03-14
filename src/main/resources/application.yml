@@ -1,0 +1,6 @@
+#spring is looking for yml files if start with application and have .yml fake datasource --
+guru:
+  jms:
+    username: JmsBoki
+    password: jmsboki
+    dburl: somejmsurl
