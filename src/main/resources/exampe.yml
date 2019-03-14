@@ -1,0 +1,29 @@
+# this is a comment
+# is used for data structure:
+name: Bojan
+names: #inline comment
+  - Bojan
+  - Dragan
+  - Srdjan
+
+pound_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: random house
+#boolean
+truth: yes
+another_truth: True
+more_true: true
+false: no #No, false, FALSE
+string_val: "This is it's quote" #if you have single quote
+colon_string: "my course: one two three"
+inlcude_new_lines: |
+  asdf adfasdf dasfas
+  asdfdasf
+  sdafdasf
+
+ignore_new_lines: >
+  this is
+  just one long
+  string
