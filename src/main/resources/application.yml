@@ -1,6 +1,11 @@
-#spring is looking for yml files if start with application and have .yml fake datasource --
+#spring is looking for yml files if start with application and have .yml --
 guru:
   jms:
     username: JmsBoki
     password: jmsboki
     dburl: somejmsurl
+
+#file separator - if we set profile (de) spring will override with application-de.yml
+---
+spring:
+  profiles: de
